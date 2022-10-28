@@ -10,12 +10,11 @@ sns.set()
 class Utils:
 
     @staticmethod
-    def summarize_diagnostics(history, testX, testY):
+    def summarize_diagnostics(history):
         '''Plots diganostic learning curves of the model 
         Inputs: - HISTORY object generated during model fitting that maintains loss values and relevant metrics
                 - TESTX and TESTY image arrays used for validating accuracy
-        Returns: - Two graphs (cross entropy loss and validation accuracy) plotted over the number of epochs. 
-                Results are saved in a diagnostics folder under the same directory. 
+        Returns: - Two plots (cross entropy loss and validation accuracy) over the number of epochs.  
         '''
         # plot loss
         plt.subplot(211)
